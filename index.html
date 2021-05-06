@@ -8,11 +8,41 @@
     <!-- Vendor CSS -->
     <link rel="stylesheet" href="dist/vendor/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="dist/vendor/owl.carousel/assets/owl.carousel.min.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css">
+
+
     <link rel="stylesheet" href="dist/css/main.css">
 
     <title>Edwin&Nadwah</title>
   </head>
   <body>
+    <!-- Modal -->
+    <div id="myModal" class="modal fade p-0" tabindex="-1">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+              <div class="modal-body text-center">
+                <h4 class="pt-4 lead">The Wedding of</h4>
+                <h2 class="ff-1 pb-5">Nadwah & Edwin</h2>
+
+                <p class="mb-1" style="font-size: .8rem;">Dear Mr/Mrs/Ms</p>
+                <h4 id="write" class="mb-3"></h4>
+                <p class="pb-0 mb-1">You are invited to our wedding</p>
+                <button type="button" class="btn btn-light btn-radius mb-3" id="modal-open" data-dismiss="modal"><i class="bi bi-heart-fill"></i> &nbsp; Open Invitation</button>
+
+                <h4 class="pt-3 lead"><i>Protokol Kesehatan</i></h4>
+                <div class="icon-protokol">
+                  <img src="dist/icon/icon_cucitangan.png" alt="">
+                  <img src="dist/icon/icon_hindari.png" alt="">
+                  <img src="dist/icon/icon_jarak.png" alt="">
+                  <img src="dist/icon/icon_masker.png" alt="">
+                </div>
+                  
+              </div>
+          </div>
+  
+      </div>
+    </div> <!-- End Modal -->
 
     <div id="hero">
         <div class="jumbotron m-0">
@@ -115,7 +145,7 @@
                           <hr>
                           <i class="bi bi-calendar-event"> &nbsp; Sunday, 20 Juni 2021</i><br>
                           <i class="bi bi-watch"> &nbsp; 09.00 WIB</i><br><br>
-                          <i class="bi bi-geo-alt"> &nbsp; Pondok Sukatani Permai Jl.melon IV Blok C2/3, Kec.Rajeg Kab.Tangerang-Banten</i>
+                          <i> &nbsp; Pondok Sukatani Permai Jl.melon IV Blok C2/3, Kec.Rajeg Kab.Tangerang-Banten</i>
                           <br><br>
                           <!-- <a href="#" class="btn btn-dark mt-3" style="opacity: 0;">Lihat Siaran Langsung</a> -->
                         </div>
@@ -129,7 +159,7 @@
                           <hr>
                           <i class="bi bi-calendar-event"> &nbsp; Sunday, 20 Juni 2021</i><br>
                           <i class="bi bi-watch"> &nbsp; 11.00 WIB s/d Selesai </i><br><br>
-                          <i class="bi bi-geo-alt"> &nbsp; Pondok Sukatani Permai Jl.melon IV Blok C2/3, Kec.Rajeg Kab.Tangerang-Banten</i><br>
+                          <i> &nbsp; Pondok Sukatani Permai Jl.melon IV Blok C2/3, Kec.Rajeg Kab.Tangerang-Banten</i><br>
                           <a href="https://www.google.com/maps/place/Blk.+C2+No.3,+Rajeg+Mulya,+Kec.+Rajeg,+Tangerang,+Banten+15540/@-6.2538853,106.5738486,11z/data=!4m9!1m2!2m1!1sPondok+Sukatani+Permai+Jl.melon+IV+Blok+C2%2F3,+Kec.Rajeg+Kab.Tangerang-Banten!3m5!1s0x2e6a007c2301d457:0xef9871acfd547345!8m2!3d-6.1074425!4d106.5412474!15sCkxQb25kb2sgU3VrYXRhbmkgUGVybWFpIEpsLm1lbG9uIElWIEJsb2sgQzIvMywgS2VjLlJhamVnIEthYi5UYW5nZXJhbmctQmFudGVukgEQZ2VvY29kZWRfYWRkcmVzcw" class="btn btn-dark btn-date mt-3">Open With Google Map</a>
                         </div>
                       </div>
@@ -186,17 +216,17 @@
         </div><!-- end container -->
     </section>
 
-   
 
-
-    <footer class="text-center bg-dark text-white py-3">
-        <p>Supported by happilyafter.online</p>
+    <footer class="text-center py-3">
+        <img src="dist/img/logo1.PNG" alt=""><br>
     </footer>
 
-
+    <!-- backtop -->
+    <a href="#" class="back-to-top btn btn-dark"><i class="bi bi-arrow-up"></i></a>
 
     <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
     <script src="dist/vendor/jquery/jquery.min.js"></script>
+    <script src="dist/vendor/jquery.easing/jquery.easing.min.js"></script>
     <script src="dist/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="dist/vendor/jquery/jquery.countdown.min.js"></script>
     <script src="dist/vendor/owl.carousel/owl.carousel.min.js"></script>

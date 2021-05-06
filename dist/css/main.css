@@ -3,6 +3,7 @@
 :root{
     --primary-font: 'Oleo Script Swash Caps', cursive;
     --primary-color:#c28285;
+    --secondary-color:#eeb9bc;
 }
 
 
@@ -25,6 +26,10 @@
     border-color: var(--primary-color) !important;
 }
 
+.btn-radius{
+    border-radius: 15px;
+}
+
 
 /* per-ornamenan */
 .section-title img{
@@ -42,6 +47,26 @@ section{
     padding-top: 60px;
 }
 
+
+
+
+/* ========== Modal ========== */
+#myModal .modal-content{
+    background-color: var(--primary-color);
+    border-radius: 25px;
+    color: white;
+    height: 80vh !important;
+    
+    opacity: 65%;
+  }
+  
+  #myModal .icon-protokol img{
+    width: 58px;
+    height: 58px;
+    margin: 5px;
+  }
+/* ========== End Modal ========== */
+  
 /* ========= Hero ========== */
 #hero{
     position: relative;
@@ -76,7 +101,6 @@ section{
     top:54%
 }
 
-
 /* // Small devices (landscape phones, 576px and up) */
 @media (max-width: 768px) and (orientation: landscape) { 
     .jumbotron .container{
@@ -93,7 +117,7 @@ section{
 /* ========= Ar-rum ========== */
 #ar-rum{
     position: relative;
-    background-color:#e9ecef;
+    background-color : var(--primary-color);
 }
 
 #ar-rum .batas{
@@ -127,6 +151,8 @@ section{
     }
 }
 /* ========== End Event ========== */
+
+/* ========== Gallery ========== */
   .gallery .gallery-item {
     box-sizing: content-box;
     padding: 30px 30px 30px 30px;
@@ -155,7 +181,7 @@ section{
   }
   
   .gallery .owl-dot.active {
-    background-color: black !important;
+    background-color: var(--primary-color) !important;
   }
   
   @media (max-width: 767px) {
@@ -168,3 +194,44 @@ section{
       left: auto;
     }
   }
+/* ========== End Gallery ========== */
+
+/*--------------------------------------------------------------
+# Back to top button
+--------------------------------------------------------------*/
+.back-to-top {
+    position: fixed;
+    display: none;
+    right: 15px;
+    bottom: 15px;
+    z-index: 99999; 
+  }
+
+  /* .btn-info{
+    background-color: var(--secondary-color) !important;
+    border-color: var(--secondary-color) !important;
+    opacity: 90%;
+  } */
+
+  .btn-dark{
+    opacity: 60%;
+  }
+
+
+  .back-to-top i {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    width: 10px !important;
+    height: 25px !important;
+  }
+  
+
+/*--------------------------------------------------------------
+# Footer
+--------------------------------------------------------------*/
+footer img{
+    width: 60px;
+    height: 40px;
+}
