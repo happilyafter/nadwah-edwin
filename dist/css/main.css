@@ -89,23 +89,12 @@ section{
     height: 100vh;
     
     background-image: url(/dist/img/2.JPG);
-    background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     text-shadow: .6px .5px black;
 }
 
-@media screen and (-webkit-min-device-pixel-ratio:0) {
-  /* Safari 5+ ONLY */
-  ::i-block-chrome, .jumbotron {
-    background-image: url(/dist/img/2.JPG);
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-  }
-}
 
 /* Countdown */
 #hero .countdown div {
@@ -157,22 +146,11 @@ section{
 #ar-rum {
     position: relative;
     background-image: url(/dist/img/3.jpg);
-    background-attachment: fixed;
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
 }
-@media screen and (-webkit-min-device-pixel-ratio:0) {
-  /* Safari 5+ ONLY */
-  ::i-block-chrome, #ar-rum {
-    position: relative;
-    background-image: url(/dist/img/3.jpg);
-    background-attachment: fixed;
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
-  }
-}
+
 #ar-rum b, #ar-rum p{
   text-shadow: .8px .4px black;
 }
