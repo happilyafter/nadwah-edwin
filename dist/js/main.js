@@ -67,5 +67,9 @@
     }
     });
 
+
+
 })(jQuery);
 
+    //Aos Init
+    AOS.init();

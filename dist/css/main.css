@@ -40,9 +40,9 @@
 .section-title img{
     width: 25%;
 }
-    @media (max-width: 568px){
+    @media (max-width: 576px){
         .section-title img{
-            width: 50%;
+            width: 60%;
         }
     }
 
@@ -53,8 +53,6 @@ section{
 }
 
 
-
-
 /* ========== Modal ========== */
 #myModal .modal-content{
     background-image: url(/dist/img/1.jpg);
@@ -62,11 +60,9 @@ section{
     background-position: center;
     background-repeat: no-repeat;
     
-
-
     border-radius: 25px;
     color: white;
-    height: 90vh !important;
+    height: 90vh;
   }
   
   #myModal .icon-protokol img{
@@ -77,6 +73,33 @@ section{
     box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.8);
     border-radius: 50%;
   }
+
+  #myModal .wedding-pt{
+    padding-top: 70px;
+  }
+
+  #myModal .dear-pt{
+    padding-top: 80px;
+    font-size: .8rem;
+  }
+
+    @media (min-width: 576px) and (max-width: 991px) and  (orientation: landscape) { 
+      #myModal .wedding-pt{
+        padding-top: 15px;
+      }
+  
+      #myModal .dear-pt{
+        padding-top:20px;
+        font-size: .8rem;
+      }
+
+      #myModal .modal-content{
+        height: 120vh;
+      }
+
+    }
+
+
 /* ========== End Modal ========== */
   
 /* ========= Hero ========== */
@@ -114,7 +137,6 @@ section{
     top:54%
 }
 
-/* // Small devices (landscape phones, 576px and up) */
 @media (max-width: 768px) and (orientation: landscape) { 
     .jumbotron .container{
         top:25%
@@ -128,8 +150,16 @@ section{
     
     background-repeat: no-repeat;
     background-position: center center; 
+  } 
+  
+  #hero .jumbotron{
+    background-image: url(/dist/img/title.JPG);
+  }
 
-}
+  #hero .jumbotron .container{
+    padding-top: 25px;
+  }
+  
 }
 /* ========= End Hero ========== */
 
@@ -159,16 +189,26 @@ section{
     background-color: white;  
     
 }
-    .bawah{
+    /* .bawah{
         bottom:0;
         border-radius: 65% 65% 0 0 / 100%;
         
-    }
+    } */
     .atas{
         top: 0;
         border-radius: 0 0 65% 65% / 100%;
-      
     }
+
+@media (max-width: 767px){
+  #ar-rum .ar-rum-body img{
+    width: 100%;
+  }
+}
+@media (min-width: 768px){
+  #ar-rum .ar-rum-body img{
+    width: 50%;
+  }
+}
 /* ========= End Ar-rum ========== */
 
 /* ========== Event ========== */
@@ -191,10 +231,17 @@ section{
 }
 
 /* // Medium devices (landscape phones, less than 768px) */
-@media (max-width: 767.98px) {
+@media (max-width: 768px) {
     #event .event-body .card{
         margin-top: 1.2rem;
     }
+}
+
+@media (min-width: 767px){
+  #event{
+    background-position: center;
+    height: 100vh;
+  }
 }
 /* ========== End Event ========== */
 
@@ -230,7 +277,7 @@ section{
     background-color: var(--primary-color) !important;
   }
   
-  @media (max-width: 767px) {
+  @media (max-width: 768px) {
     .gallery .gallery-item {
       padding: 30px;
       margin: 15px;
