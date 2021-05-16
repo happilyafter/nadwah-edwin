@@ -47,8 +47,11 @@
       // otomasi audio
       $('#modal-open').click(function() {
         musik.play();
+
         //Aos Init
         AOS.init();
+
+
     });
     
     // Owl Init
@@ -73,4 +76,3 @@
 
 })(jQuery);
 
- 
